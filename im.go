@@ -118,6 +118,7 @@ func NewIM(opt *Options) IM {
 		AppSecret:  opt.AppSecret,
 		UserId:     opt.UserId,
 		Expiration: opt.Expiration,
+		Domain:     opt.Domain,
 	})}
 }
 
