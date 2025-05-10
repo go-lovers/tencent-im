@@ -102,7 +102,7 @@ func (c *client) request(method, serviceName, command string, data, resp interfa
 		return err
 	}
 
-	if err = res.Scan(resp); err != nil {
+	if err = res.ScanBody(resp); err != nil {
 		return err
 	}
 
